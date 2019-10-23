@@ -10,8 +10,10 @@ const hw1 = () => {
             result1.push(x);
         }
     })
-
+    console.log(`==============================`);
+    console.log(`Question 1 is .... ${arr1}`);
     console.log(`sol 1 is .... ${result1}`);
+    console.log(`==============================`);
 }
 
 hw1();
@@ -23,7 +25,10 @@ const hw2 = () => {
     let arr2 = [0,9,1,8,2,7,3,6,4,5];
     let result2 = arr2.sort();
 
+    console.log(`==============================`);
+    console.log(`Question 2 is .... ${arr2}`);
     console.log(`sol 2 is .... ${result2}`)
+    console.log(`==============================`);
 }
 
 hw2();
@@ -44,7 +49,10 @@ const hw3 = () => {
         }
     })
 
+    console.log(`==============================`);
+    console.log(`Question 3 is .... ${arr3}`);
     console.log(`sol 3 is .... ${result3}`);
+    console.log(`==============================`);
 }
 
 hw3();
@@ -58,9 +66,12 @@ const hw4 = () => {
     myMap.set('bom1', 10);
     myMap.set('bom2', 20);
 
+    console.log(`==============================`);
+    console.log(`Question 4 is create map`);
     console.log(myMap)
-    console.log(`sol 4 map value from key 1 is .... ${myMap.get('bom1')}`) 
-    console.log(`sol 4 has from key 1 is .... ${myMap.has('bom1')}`) 
+    console.log(`sol 4 Is map has key1 .... ${myMap.has('bom1')}`) 
+    console.log(`sol 4 map value from key 1(bom1) is .... ${myMap.get('bom1')}`) 
+    console.log(`==============================`);
 
 }
 
@@ -70,8 +81,9 @@ hw4();
 
 const hw5 = () => {
 
-    let arr5 = [0,3,1,2];
+    let arr5 = [0,3,1,2,0,0,2];
     let result5 = [];
+    const copyArr = arr5.map(x=>x);
     
 
     while(arr5.length !== 0 ){
@@ -81,15 +93,15 @@ const hw5 = () => {
             if(arr5.length === 0 ){
                 result5.push(dataValue)
             } else {
-                let minNum = [];
+                let trueNum = [];
                 arr5.forEach(x => {
-                    if(dataValue <= x){
-                        minNum.push('ture');
+                    if(dataValue >= x){
+                        trueNum.push('ture');
                     } else {
-                        minNum.push('false');
+                        trueNum.push('false');
                     }
                 });
-                if(minNum.includes("false")){
+                if(trueNum.includes("false")){
                     arr5.push(dataValue);
                 } else {
                     result5.push(dataValue);
@@ -98,7 +110,10 @@ const hw5 = () => {
 
     }
 
-    console.log(result5);
+    console.log(`==============================`);
+    console.log(`Question 5 is .... ${copyArr}`);
+    console.log(`sol 5 is .... ${result5}`);
+    console.log(`==============================`);
 
 }
 
