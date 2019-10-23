@@ -1,0 +1,24 @@
+{
+  "name": "codecamp4",
+  "version": "1.0.0",
+  "description": "Assignments for Thailand Code Camp 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest src/day2/main.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpicHigh/codecamp4.git"
+  },
+  "author": "Prasit Tongpradit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EpicHigh/codecamp4/issues"
+  },
+  "homepage": "https://github.com/EpicHigh/codecamp4#readme",
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "jest": "^24.9.0",
+    "jest-extended": "^0.11.2"
+  }
+}
