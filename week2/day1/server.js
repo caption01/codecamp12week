@@ -8,6 +8,7 @@ const plusRoute = require('./route/plusRoute.js')
 const plusByJSONRoute = require('./route/plusByJSONRoute.js')
 const checkEvenNumberRoute = require('./route/checkEvenNumberRoute.js')
 const numberRoute = require('./route/numberRoute.js')
+const countFieldsRoute = require('./route/countFieldsRoute.js')
 
 
 const app = express();
@@ -25,7 +26,7 @@ app.use('/plus', plusRoute);
 app.use('/plusByJSON', plusByJSONRoute);
 app.use('/checkEvenNumber', checkEvenNumberRoute);
 app.use('/number', numberRoute);
-
+app.use('/countFields', countFieldsRoute)
 
 
 

@@ -23,6 +23,19 @@ app.post('/', (req, res) => {
     res.json(data)
 })
 
+app.delete('/', (req, res) => {
+    let dataReq = req.body;
+    let pointer = db.indexOf(dataReq);
+    
+    if(pointer !== -1){
+        db.splice(pointer, 1)
+        res.json("Success DELETE")
+    } else {
+        res.json("Data not found")
+    }
+
+    
+})
 
 
 const PORT = 3000;
