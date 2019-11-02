@@ -33,8 +33,6 @@ app.delete('/', (req, res) => {
     } else {
         res.json("Data not found")
     }
-
-    
 })
 
 
