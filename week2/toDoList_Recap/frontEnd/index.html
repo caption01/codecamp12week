@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ToDoList-Recap</title>
+</head>
+<body>
+    
+    <div class="jumbotron">
+        <h1 class="display-4">T o D o L i s t</h1>
+        <div class="input-group mb-3" id="header-context">
+            <div class="input-group-append" id="header-input">
+                <input type="text" class="form-control" placeholder="Add your activity" id="text-add">
+                <button class="btn btn-outline-secondary" type="button" id="btn-add">Add</button>
+            </div>
+        </div>
+        <hr class="my-4">
+
+        <div class="row">
+            <div class="col">
+                <h2>Todo</h2>
+                <ul id="todo-ul">
+                    <li>list1 
+                        <span class="none trash"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></span>
+                        <span class="none check"><i class="fa fa-check fa-lg icon" aria-hidden="true" ></i></span>
+                    </li>
+                    <li>list2 
+                        <span class="none trash"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></span>
+                        <span class="none check"><i class="fa fa-check fa-lg icon" aria-hidden="true" ></i></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Complete</h2>
+                <ul id="complete-ul">
+                    <li>Com1 
+                        <span class="none trash"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></span>
+                        <span class="none repeat"><i class="fa fa-repeat fa-lg" aria-hidden="true" ></i></span>
+                    </li>
+                    <li>Com2 
+                        <span class="none trash"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></span>
+                        <span class="none repeat"><i class="fa fa-repeat fa-lg" aria-hidden="true" ></i></span>
+                    </li>
+                </ul>
+            </div>
+         </div>
+
+
+    </div>
+
+
+
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./index.js" ></script>
+</body>
+</html>

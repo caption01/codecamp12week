@@ -10,7 +10,8 @@ app.use(bodyParse.json());
 const con = mysql.createConnection({
     host: "127.0.0.1",
     user: "root",
-    password: "0876061277",
+    password: "password",
+    database: 'user'
 })
 
 con.connect(err=>{
@@ -18,9 +19,15 @@ con.connect(err=>{
         console.log(err)
     }else{
         console.log('connected to SQL-database')
+        con.query("SELECT * FROM user WHERE name = 'andrel'", (err, result, fields)=>{
+            if(err){
+                console.log(err)
+            } else {
+                console.log(result)
+            }
+        })
     }
 })
-
 
 app.use('/user', userRoute)
 

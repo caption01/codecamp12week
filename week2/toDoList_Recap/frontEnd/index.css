@@ -1,0 +1,42 @@
+.jumbotron {
+    text-align: center;
+}
+
+#header-context {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header-input {
+    width: 50%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+
+.col {
+    border: 1px solid black;
+    max-width: 40%;
+    height: 25vw;
+}
+
+.none {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+    float: right;
+}
+
+li:hover .none {
+    opacity: 1;
+    display: inline-block;
+    visibility: visible;
+}

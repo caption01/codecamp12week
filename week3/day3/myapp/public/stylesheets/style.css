@@ -1,0 +1,33 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#top-navbar {
+  color: white;
+  font-weight: 700;
+}
+
+#top-form-left {
+  margin-left: 10%;
+}
+
+#top-form-right {
+  margin-right: 10%;
+}
+
+.input-group .form-control {
+  width: 40vw;
+}
+
+.form-inline .media.align-items-center .media-body span {
+  padding-right: 1rem;
+  border-right: 1px solid black;
+}
+
+#account-profile {
+  border-radius: 50%;
+}
+
+.post-body {
+  border: 0;
+}
