@@ -1,0 +1,120 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  
+  #top-navbar {
+    color: white;
+    font-weight: 700;
+    background-color: #3b5998;
+  }
+  
+  #top-form-left {
+    margin-left: 10%;
+  }
+  
+  #top-form-right {
+    margin-right: 10%;
+  }
+  
+  .input-group .form-control {
+    width: 40vw;
+  }
+  
+  .form-inline .media.align-items-center .media-body span {
+    padding-right: 1rem;
+    border-right: 1px solid black;
+  }
+  
+  #account-profile {
+    border-radius: 50%;
+  }
+  
+
+/* current page */
+
+
+.post-body {
+  border: 0;
+  width: 100%;
+}
+
+.container {
+    max-width: 60%;
+}
+
+.card-img-top {
+    height: 300px;
+    position: relative;
+}
+
+.card-img-top-sub-picture {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    z-index: 1;
+    bottom: 5%;
+    left: 3%;
+    border-radius: 50%;
+    border: 3px white solid;
+}
+
+.card-img-top-sub-text {
+    position: absolute;
+    z-index: 1;
+    bottom: 25%;
+    left: 30%;
+    font-size: 2rem;
+    color: white;
+}
+
+.card-body {
+    display: flex;
+    padding: 0;
+}
+
+.card-body-first {
+    width: 30%;
+}
+
+.card-body-second {
+    width: 80%;
+}
+
+.card-left-component{
+    flex-wrap: wrap;
+}
+
+.full {
+    width: 100%;
+}
+
+.card-btn-div {
+    width: 80%;
+    margin: auto;
+}
+
+.card-btn {
+    width: 100%;
+}
+
+.post-body {
+    border: none;
+}
+
+.card-body-post {
+    display: block;
+}
+
+.card-text {
+    padding: 0.75rem 1.25rem;
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: none;
+}

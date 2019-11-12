@@ -2,9 +2,15 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+a {
+  color: white;
+}
+
+
 #top-navbar {
   color: white;
   font-weight: 700;
+  background-color: #3b5998;
 }
 
 #top-form-left {
@@ -30,4 +36,42 @@ body {
 
 .post-body {
   border: 0;
+  width: 100%;
+}
+
+.card-header {
+  background: white;
+  border-bottom: none;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-body p {
+  padding: 0.75rem 1.25rem;
+}
+
+.carousel {
+  height: 100%;
+  display: flex;
+}
+
+
+.carousel-inner {
+  align-items: center;
+  display: flex;
+}
+
+#carouselExampleIndicators {
+  height: 200px;
+}
+
+
+
+/* setting for post to timeLine */
+
+.post-timeline {
+  display: flex;
+  flex-direction: column-reverse;
 }
