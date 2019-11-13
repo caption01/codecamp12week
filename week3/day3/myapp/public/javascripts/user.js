@@ -8,6 +8,8 @@ $(document).ready(function(){
         let imageUrl = "https://www.washingtonpost.com/resizer/kPkFQsQjvSIjfXG-mFXDEpxq6-4=/767x0/smart/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/HB4AT3D3IMI6TMPTWIZ74WAR54.jpg"
         let imageText = "this is text to explain to image"
         let text = $("#post-text-input").val();
+
+
         
         $(".post-timeline").append(
             `<div class="card mt-4">
@@ -19,7 +21,7 @@ $(document).ready(function(){
                       </div>
         
                     </div>
-                    <div class="card-body">
+                    <div class="card-body body-block">
                       <p class="card-text">${text}</p>
                     </div>
     
@@ -46,7 +48,8 @@ $(document).ready(function(){
                 </div>`
         )
 
-        $("#post-text-input").val(" ");
+        $("#post-text-input").val("");
+        $("#post-text-input").attr("placeholder", "คุณกำลังคิดอะไรอยู่");
     })
 
 

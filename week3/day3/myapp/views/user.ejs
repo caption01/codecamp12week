@@ -116,7 +116,7 @@
                     </div>
                     <div class="modal-body d-flex">
                         <img src="https://p7.hiclipart.com/preview/782/114/405/5bbc3519d674c.jpg" width="40" height="40" class="d-inline-block align-top mr-2" alt="" id="account-profile">
-                        <input type="text" placeholder="คุณกำลังคิดอะไรอยู่" class="post-body">
+                        <input type="text" placeholder="คุณกำลังคิดอะไรอยู่" class="post-body" id="post-text-input">
                       </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-light btn-sm" data-dismiss="modal">
@@ -127,14 +127,15 @@
                         <i class="fa fa-group mr-2" style="font-size:18px"></i>
                         <span>tag friend</span>
                       </button>
-                      <button type="button" class="btn btn-light btn-sm" data-dismiss="modal">
+                      <button type="button" class="btn btn-light btn-sm" data-dismiss="modal" id="post-create">
                         <span>post</span>
                       </button>
                       
                     </div>
                 </div>
 
-                <div class="card mt-4">
+                <div class="post-timeline">
+                  <div class="card mt-4">
                     <div class="card-header d-flex align-items-center">
                       <img src="https://p7.hiclipart.com/preview/782/114/405/5bbc3519d674c.jpg" width="30" height="30" class="d-inline-block align-top mr-2" alt="" id="account-profile">
                       <div>
@@ -173,14 +174,16 @@
                           </button>
                       </div>
                   </div>
+                  </div>
                 </div>
+                
             </div>
 
       </div>
 
 
   
-
+    <script src="/javascripts/user.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

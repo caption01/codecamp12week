@@ -44,7 +44,7 @@ body {
 }
 
 .container {
-    max-width: 60%;
+    max-width: 900px;
 }
 
 .card-img-top {
@@ -117,4 +117,17 @@ body {
 .card-header {
     background-color: white;
     border-bottom: none;
+}
+
+
+
+/* setting for post to timeLine */
+
+.post-timeline {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.body-block {
+  display: block;
 }
