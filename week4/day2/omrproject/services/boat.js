@@ -17,7 +17,7 @@ module.exports = (app, db) => {
             .then(result => res.status(201).json(result))
             .catch(err => {
                 console.log(err)
-                res.status(404).json("fail from post boat req.")
+                res.status(404).json(`Error: ${err.message}`)
             })
 
     })
@@ -47,7 +47,9 @@ module.exports = (app, db) => {
             }
         })
             .then(result => res.status(201).json(result))
-            .catch(err =>res.status(404).json('fail to update boat'))
+            .catch(err =>res.status(404).json(`Error: ${err.message}`))
     })
+
+    
 
 }

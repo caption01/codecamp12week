@@ -95,8 +95,8 @@
                   </div>
                   <div class="modal-body d-flex">
                       <img src="https://p7.hiclipart.com/preview/782/114/405/5bbc3519d674c.jpg" width="40" height="40" class="d-inline-block align-top mr-2" alt="" id="account-profile">
-                      <input type="text" placeholder="คุณกำลังคิดอะไรอยู่" class="post-body" id="post-text-input" >
-                    </div>
+                      <input type="text" placeholder="คุณกำลังคิดอะไรอยู่" class="post-body" id="post-text-input"data-toggle="modal" data-target="#exampleModal" >
+                  </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-light btn-sm" data-dismiss="modal">
                       <i class="fa fa-picture-o mr-2" style="font-size:18px"></i>
@@ -107,11 +107,31 @@
                       <span>tag friend</span>
                     </button>
                     <button type="button" class="btn btn-light btn-sm" data-dismiss="modal">
-                      <span id='post-create'>post</span>
+                      <span id='post-create' >post</span>
                     </button>
-                    
                   </div>
               </div>
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
 
               <div class="post-timeline">
                 <div class="card mt-4">

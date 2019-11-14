@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
 
-    const Post = require('./post.js')
+    // const Post = require('./post.js')
 
     const User = sequelize.define('user', {
         name: {
@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     })
 
-   User.hasMany(Post, {foreignKey: 'userId'})
+//    User.hasMany(Post, {foreignKey: 'userId'})
 
     return User
 }

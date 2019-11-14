@@ -1,7 +1,7 @@
 module.exports = (app, db) => {
 
     app.get('/sailor', (req, res) => {
-        db.sailor.findAll()
+        db.sailor.findAll({ include: [db.boat]})
             .then(result => res.status(200).json(result))
     })
 
@@ -16,7 +16,7 @@ module.exports = (app, db) => {
             .then(result => res.status(201).json(result))
             .catch(err => {
                 console.log(err)
-                res.status(404).json("fail from post sailor req.")
+                res.status(404).json(`Error: ${err.message}`)
             })
 
     })

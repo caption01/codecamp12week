@@ -1,8 +1,13 @@
 module.exports = (sequelize, DataTypes) => {
 
+    const dateToday = String(new Date()) 
+
     const Reserve = sequelize.define('reserve', {
         day: {
-            type: DataTypes.DATE
+            type: DataTypes.DATE,
+            validate: {
+                isAfter: dateToday,
+            }
         }
     },{
         freezeTableName: true,
@@ -10,4 +15,6 @@ module.exports = (sequelize, DataTypes) => {
     })
 
     return Reserve
+
+  
 }

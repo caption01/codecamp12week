@@ -1,7 +1,4 @@
 module.exports = (sequelize, DataTypes) => {
-
-    const Reserve = require('./reserve.js')(sequelize, DataTypes)
-
     const Sailor = sequelize.define('sailor', {
         name: {
             type: DataTypes.STRING(45)
@@ -10,7 +7,14 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER
         },
         age : {
-            type: DataTypes.DOUBLE
+            type: DataTypes.DOUBLE,
+            validate: {
+                customAgeValidate(value){
+                    if(value >= 80){
+                        throw new Error("age must below 80")
+                    }
+                }
+            }
         }
     },{
         freezeTableName: true,
@@ -18,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     })
 
     Sailor.associate = (models) => {
-        Sailor.belongsToMany(models.boat, {through: Reserve})
+        Sailor.belongsToMany(models.boat, {through: models.reserve})
     }
 
     return Sailor
