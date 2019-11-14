@@ -49,28 +49,3 @@ const app = <App />
 ReactDOM.render(app, document.getElementById('contents'));
 
 
-<xxx />
-
-
-class XXX extends React.Component{
-
-    render(){
-
-        return(
-            <div>
-                <p></p>
-            </div>
-        )
-
-
-
-    }
-
-
-
-
-
-
-
-
-}

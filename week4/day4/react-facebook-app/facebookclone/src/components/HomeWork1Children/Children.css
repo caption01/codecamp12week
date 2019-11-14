@@ -1,0 +1,13 @@
+.children-component {
+    width: 500px;
+    margin: auto;
+}
+
+.card-header {
+    background-color: white;
+}
+
+.card-footer {
+    background-color: white;
+}
+
