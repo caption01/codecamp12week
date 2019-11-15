@@ -2,7 +2,9 @@ import React from 'react';
 
 const list = ["Item1", "Item2", "Item3", "Item4"]
 
-const listItem = list.map(item => <div className="trillo-list border border-light">{item}</div>)
+const listItem = list.map((item, index) => <div key={index} className="trillo-list border border-light">{item}</div>)
+
+console.log(listItem)
 
 class TrilloList extends React.Component{
 
@@ -18,3 +20,5 @@ class TrilloList extends React.Component{
 
 
 export default TrilloList;
+
+

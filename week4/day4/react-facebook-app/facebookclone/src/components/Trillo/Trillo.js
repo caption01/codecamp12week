@@ -12,7 +12,7 @@ class Trillo extends React.Component{
         <Container className="border border-info rounded trillo-container">
             <p className="trillo-header">Phone Features</p>
             <TrilloList />
-            <p className="trillo-footer">Add a card</p>
+            <p className="trillo-footer">Add a card...</p>
         </Container>
       </div>
     );
