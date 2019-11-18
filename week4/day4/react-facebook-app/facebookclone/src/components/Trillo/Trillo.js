@@ -10,7 +10,7 @@ class Trillo extends React.Component{
     return (
       <div>
         <Container className="border border-info rounded trillo-container">
-            <p className="trillo-header">Phone Features</p>
+            <p className="trillo-header">Phone Features <i class="fas fa-adjust"></i> </p>
             <TrilloList />
             <p className="trillo-footer">Add a card...</p>
         </Container>
