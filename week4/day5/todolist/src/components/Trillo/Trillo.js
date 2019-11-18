@@ -9,8 +9,15 @@ class Trillo extends React.Component{
 
 state = {
     input: "",
-    list: []
+    list: ['click me when you finish'],
+    tick: {
+      status: "off",
+      on: {textDecorationLine: "line-through"},
+      off: {textDecorationLine: "none"}
     }
+
+    
+}
   
   handleInputChange = (e) => {
     this.setState({
@@ -21,6 +28,7 @@ state = {
   handleKeyPress = (e) => {
     if(e.key === 'Enter'){
       this.handleSubmit()
+      document.getElementById("trilloInput").value = ""
     }
 
   }
@@ -30,8 +38,8 @@ state = {
       const list = this.state.list.slice()
       const newList = this.state.input
       this.setState({list: list.concat(newList)})
-
       document.getElementById("trilloInput").value = ""
+      this.setState({input: ""})
     }
   }
 
@@ -39,6 +47,18 @@ state = {
     const list = this.state.list.slice()
     list.splice(clickElement.index, 1)
     this.setState({list: list})
+  }
+
+  handleTickChange = (clickItem) => {
+
+    const tickItem = document.getElementById(clickItem.index)
+    if(tickItem.className === "off") {
+      tickItem.style.textDecoration = "line-through";
+      tickItem.className = "on"
+    }else if(tickItem.className === "on"){
+      tickItem.style.textDecoration = "none";
+      tickItem.className = "off"
+    }
   }
   
 
@@ -48,7 +68,7 @@ state = {
       <div>
         <Container className="border border-info rounded trillo-container">
             <TrilloInput handleInputChange={this.handleInputChange} handleSubmit={this.handleSubmit} handleKeyPress={this.handleKeyPress} />
-            <TrilloList list={this.state.list} handleRemove={this.handleRemove} />
+            <TrilloList list={this.state.list} handleRemove={this.handleRemove} tick={this.state.tick} handleTickChange={this.handleTickChange} />
         </Container>
       </div>
     );
