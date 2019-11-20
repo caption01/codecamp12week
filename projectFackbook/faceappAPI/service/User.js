@@ -2,7 +2,14 @@ module.exports= (app, db) => {
 
     app.get('/user', (req, res) => {
 
-        db.user.findAll({include: [db.post]})
+        db.user.findAll({
+            include: {
+                model: db.post,
+                include: {
+                    model: db.comment
+                }
+            }
+        })  
             .then(result => res.status(201).json(result))
             .catch(err => res.status(404).json('cant get data'))
             
@@ -15,8 +22,13 @@ module.exports= (app, db) => {
         db.user.findAll({
             where: {
                 user_id: userId
-            }, include: [db.post]
-        })
+            }, include: {
+                model: db.post,
+                include: {
+                    model: db.comment
+                }
+            }
+        })  
             .then(result => res.status(201).json(result))
             .catch(err => res.status(404).json(`cant get data from user_id ${req.params.id}`))
     })
